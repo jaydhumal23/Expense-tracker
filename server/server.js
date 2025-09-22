@@ -12,13 +12,7 @@ const app = express();
 connectDB()
 app.use(express.json());
 app.use(cors())
-app.use("/users",router)
-app.get("/", (req, res) => {
-    res.redirect("/home")
-});
-app.get("/home", (req, res) => {
-    res.end("Helllo qt")
-})
+app.use("/api/v1/users",router)
 
 app.listen(PORT, () => {
     console.log(`server is running at http://localhost:${PORT}`)
