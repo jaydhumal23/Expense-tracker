@@ -8,7 +8,7 @@ export default function RegisterPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Expense Tracker - Register";
+    document.title = "Expense Management System - Register";
   }, []);
 
   const gotoLogin = () => {
@@ -36,7 +36,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Expense Tracker
+            Expense Management System
           </h1>
           <p className="text-gray-600 mt-2">Create your account to start tracking expenses</p>
         </div>
